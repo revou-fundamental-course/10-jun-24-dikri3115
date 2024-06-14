@@ -1,3 +1,43 @@
 body{
     background-color: aliceblue;
+    display: block;
+    margin: 8px;
+}
+textarea{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    resize:none;
+    background-color: #f8f8f8;
+    height: 60px;
+    border:2px solid #ccc;
+    border-radius: 3px;
+}
+button{
+    height: 32px;
+    border: 0px;
+    border-radius: 5px;
+}
+.subject-info{
+    font-size: 24px;
+    font-style: italic;
+    font-family: math;
+}
+.textarea-cel{
+    text-align: center;
+}
+.result{
+    display: flex;
+    justify-content: space-around;
+}
+.btn-konversi{
+    background-color: seagreen;
+    color: white;
+}
+.btn-reset{
+    background-color: red;
+    color: white;
+}
+.btn-reverse{
+    background-color: blue;
+    color: white;
 }
