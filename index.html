@@ -17,10 +17,10 @@
         <!--celsius-->
         <section class="textarea-cel">
             <p>  Celsius &deg;C<br>
-                <textarea  name="celsius" id="celsius" placeholder="Masukan suhu"></textarea><br>
-                <button class="btn-konversi">Konversi</button>
-                <button class="btn-reset">Reset</button>
-                <button class="btn-reverse">Reverse</button>
+                <textarea id="inputSuhu" placeholder="Masukan suhu"></textarea><br>
+                <button onclick="konversiSuhu()" class="btn-konversi">Konversi</button>
+                <button onclick="resetForm()" class="btn-reset">Reset</button>
+                <button  class="btn-reverse">Reverse</button>
             </p>
         </section>
         <!-- Fahrenheit -->
@@ -28,7 +28,7 @@
             <section>
                 <p>
                     Fahrenheit (&deg;F)<br>
-                    <textarea name="" id=""></textarea>
+                    <textarea id="hasilKonversi"></textarea>
                 </p>
             </section>
             <!-- Hasil -->
