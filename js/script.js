@@ -3,8 +3,6 @@
 function konversiSuhu() {
     var input = document.getElementById("inputSuhu").value;
     var hasilTextArea = document.getElementById("hasilKonversi");
-    var suhu;
-
     if (input !== -1) {
         // Konversi dari Celcius ke Fahrenheit
         suhu = parseFloat(input);
