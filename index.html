@@ -12,15 +12,15 @@
         <h1>Website Konversi Suhu</h1>
     </header>
     <!--main content-->
-    <main>
+    <main id="Form1">
         <p>Masukan suhu derajat celsius (&deg;C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil dalam bentuk Fahrenheit (&deg;F)</p>
         <!--celsius-->
         <section class="textarea-cel">
             <p>  Celsius &deg;C<br>
                 <textarea id="inputSuhu" placeholder="Masukan suhu"></textarea><br>
                 <button onclick="konversiSuhu()" class="btn-konversi">Konversi</button>
-                <button onclick="resetForm()" class="btn-reset">Reset</button>
-                <button  class="btn-reverse">Reverse</button>
+                <button onclick="resetFormC()" class="btn-reset">Reset</button>
+                <button  class="btn-reverse" onclick="switchForm()">Reverse</button>
             </p>
         </section>
         <!-- Fahrenheit -->
@@ -28,14 +28,14 @@
             <section>
                 <p>
                     Fahrenheit (&deg;F)<br>
-                    <textarea id="hasilKonversi"></textarea>
+                    <textarea id="hasilKonversi" disabled></textarea>
                 </p>
             </section>
             <!-- Hasil -->
             <section>
                 <p>
                     Cara Kalkulasi<br>
-                    <textarea id="caraKalkulasi"></textarea>
+                    <textarea id="caraKalkulasi" disabled></textarea>
                 </p>
             </section>
         </section>
@@ -50,6 +50,45 @@
                <p><span class="subject-info">S</span><sub>(&deg;F)</sub> = (<span class="subject-info">S</span><sub>(&deg;C)</sub>x9/5)+32)</p>
                <p>Atau</p>
                <p><span class="subject-info">S</span><sub>(&deg;F)</sub> = (<span class="subject-info">S</span><sub>(&deg;C)</sub>x1.8)+32)</p>
+            </section>
+    </main>
+    <main id="reverseForm2" style="display: none;" >
+        <p>Masukan suhu derajat Fahrenheit (&deg;F) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil dalam bentuk Celsius (&deg;C)</p>
+        <!--celsius-->
+        <section class="textarea-cel">
+            <p>  Celsius &deg;C<br>
+                <textarea id="hasilCelsius" disabled></textarea><br>
+                
+            </p>
+        </section>
+        <!-- Fahrenheit -->
+        <section class="result">
+            <section>
+                <p>
+                    Fahrenheit (&deg;F)<br>
+                    <textarea id="inputSuhuFahrenheit" placeholder="Masukan suhu"></textarea><br>
+                    <button onclick="konversiSuhuF()" class="btn-konversi">Konversi</button>
+                    <button onclick="resetFormF()" class="btn-reset">Reset</button>
+                    <button  class="btn-reverse" onclick="switchForm()">Reverse</button>
+                </p>
+            </section>
+            <!-- Hasil -->
+            <section>
+                <p>
+                    Cara Kalkulasi<br>
+                    <textarea id="caraKalkulasiFahr" disabled></textarea>
+                </p>
+            </section>
+        </section>
+            <!-- informasi hasil konversi -->
+            <section>
+                <header>
+                    <h1>Cara konversi suhu dari Fahrenheit (&deg;F) ke Celsius (&deg;celsius)</h1>
+                </header>
+
+                <hr/>
+               <p> Suhu <span class="subject-info">S</span> dalam derajat Celsius (&deg;C) sama dengan suhu <span class="subject-info">S</span> dalam derajat Celsius (&deg;F)</p>
+               <p><span class="subject-info">S</span><sub>(&deg;C)</sub> = (<span class="subject-info">S</span><sub>(&deg;F)</sub>-32)*5/9)</p>
             </section>
     </main>
 </body>

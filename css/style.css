@@ -1,7 +1,8 @@
 body{
-    background-color: aliceblue;
+    background-color: #2f3b36;
     display: block;
     margin: 8px;
+    color: white;
 }
 textarea{
     font-family: 'Courier New', Courier, monospace;
