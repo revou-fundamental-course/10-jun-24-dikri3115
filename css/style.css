@@ -4,11 +4,16 @@ body{
     background-color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
 }
-header{
+header,h1{
+    text-align: center;
     margin: 0%;
     width: 100%;
     background-color: rgb(42, 58, 49);
     color: white;
+}
+p{
+    margin-left: 8px;
+    margin-right: 8px;
 }
 textarea{
     font-family: 'Courier New', Courier, monospace;
@@ -24,6 +29,23 @@ button{
     border: 0px;
     border-radius: 5px;
 }
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style for the box */
+  .box {
+    border-radius: 6px;
+    text-align: center;
+    width: 300px; /* Width of the box */
+    padding: 20px; /* Padding inside the box */
+    border: 1px solid #ccc; /* Border around the box */
+    background-color: #f0f0f0; /* Background color of the box */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for depth */
+    margin: 30px; /* Margin outside the box */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 .subject-info{
     font-size: 24px;
     font-style: italic;

@@ -4,14 +4,12 @@ function konversiSuhu() {
     var input = document.getElementById("inputSuhu").value;
     var hasilCelsius = document.getElementById("hasilKonversi");
     var carakalkulasiC = document.getElementById("caraKalkulasi")
-    if (input !== -1) {
-        // Konversi dari Celcius ke Fahrenheit
-        
+    if (isNaN(input)) {
+        hasilCelsius.value = "Format suhu tidak valid. Harap masukkan suhu dalam format angka.";
+    }else {
         var fahrenheit = (input * 9/5) + 32;
         hasilCelsius.value = fahrenheit.toFixed(1) + "°F";
         carakalkulasiC.value = "("  + input + " * 9/5) + 32";
-    }else {
-        hasilTextArea.value = "Format suhu tidak valid. Harap masukkan suhu dalam format °C atau °F.";
     }
 }
 
@@ -35,13 +33,13 @@ function konversiSuhuF() {
     var hasilhitung = document.getElementById("hasilCelsius");
     var carakalkulasi = document.getElementById("caraKalkulasiFahr")
     
-    if (input !== -1) {
+    if (isNaN(input)) {
         // Konversi dari Fahrenheit ke Celsius
-         var fahrenheit = (input - 32)*5/9;
+        hasilhitung.value = "Format suhu tidak valid. Harap masukkan suhu dalam format angka.";
+    }else{
+        var fahrenheit = (input - 32)*5/9;
         hasilhitung.value = fahrenheit.toFixed(1) + "°C";
         carakalkulasi.value = "("  + input + "- 32)x5/9";
-    }else {
-        hasilhitung.value = "Format suhu tidak valid. Harap masukkan suhu dalam format °C atau °F.";
     }
 }
 
