@@ -6,7 +6,9 @@ function konversiSuhu() {
     var carakalkulasiC = document.getElementById("caraKalkulasi")
     if (isNaN(input)) {
         hasilCelsius.value = "Format suhu tidak valid. Harap masukkan suhu dalam format angka.";
-    }else {
+    }else if(input===''){
+        hasilCelsius.value="Nilai suhu belum diisi"
+    }else{
         var fahrenheit = (input * 9/5) + 32;
         hasilCelsius.value = fahrenheit.toFixed(1) + "°F";
         carakalkulasiC.value = "("  + input + " * 9/5) + 32";
@@ -36,6 +38,8 @@ function konversiSuhuF() {
     if (isNaN(input)) {
         // Konversi dari Fahrenheit ke Celsius
         hasilhitung.value = "Format suhu tidak valid. Harap masukkan suhu dalam format angka.";
+    }else if(input === ''){
+        hasilCelsius.value="Nilai suhu belum diisi"
     }else{
         var fahrenheit = (input - 32)*5/9;
         hasilhitung.value = fahrenheit.toFixed(1) + "°C";
